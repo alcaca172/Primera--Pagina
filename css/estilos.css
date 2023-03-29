@@ -1,7 +1,104 @@
-body{
-    background-color: blueviolet;
+/* Estilos generales */
+body {
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+	color: #333;
+	margin: 0;
+	margin-bottom: 0px;
+	padding: 0;
+    position: relative;
+    min-height: 100vh;
 }
 
-h1{
-    background-color: brown;
+/* Encabezado */
+header {
+	background-color: #333;
+	color: #fff;
+	padding: 20px;
+}
+
+h1 {
+	margin: 0;
+	font-size: 2rem;
+}
+
+nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: flex;
+}
+
+nav li {
+	margin-right: 20px;
+}
+
+nav a {
+	color: #fff;
+	text-decoration: none;
+}
+
+/* Contenido principal */
+main {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+section {
+	margin-bottom: 40px;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-bottom: 20px;
+}
+
+ul {
+	margin-left: 20px;
+}
+
+/* Pie de página */
+footer {
+    position:absolute;
+	background-color: #333;
+	color: #fff;
+	padding: 20px;
+	text-align: center;
+    margin-top: auto;
+    width: 97.3%;
+	bottom: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+	main {
+		padding: 10px;
+	}
+
+	header {
+		padding: 10px;
+	}
+
+	h1 {
+		font-size: 1.5rem;
+	}
+
+	nav {
+		display: none;
+	}
+
+	nav ul {
+		flex-wrap: wrap;
+	}
+
+	nav li {
+		margin: 10px;
+	}
+
+	nav a {
+		display: block;
+	
+    }
 }
