@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Galería de Fotos</title>
+	<link rel="stylesheet" href="stylesGaleria.css">
+</head>
+<body><div id="inicio"></div>
+	<header >
+		<a href ="#" class="imagen">
+			<img src="img\prueba.png" alt="logo de la compañia" id="logo-img">
+			<h1 class="nombre-empresa">Excavaciones Mansal y Transportes Mansaki</h1>
+		  </a>
+		<nav>
+			<ul>
+				<li><a href="../index.html#inicio">Inicio</a></li>
+				<li><a href="servicios.html">Servicios</a></li>
+        		<li><a href="galeria.html" >Galeria</a></li>
+				<li><a href="contacto.html">Contacto</a></li>
+			</ul>
+		</nav>
+	</header>
+	
+	<div class="container">
+		<h1>Galería</h1>
+		<div class="subtext">
+		<p>Tenemos a disposicón maquinaria variada.</p>
+		<p>Aquí les mostramos los vehículos de los que disponemos y la realización de algunos de nuestros trabajos.</p>
+	</div>
+		<div class="image-container">
+			<div class="image"><img src = "img\camion.png" alt=""></div>
+			<div class="image"><img src = "img\camion.png" alt=""></div>
+			<div class="image"><img src = "img\camion.png" alt=""></div>
+			<div class="image"><img src = "img\camion.png" alt=""></div>
+			<div class="image"><img src = "img\camion.png" alt=""></div>
+			<div class="image"><img src = "img\camion.png" alt=""></div>
+			<div class="image"><img src = "img\camion.png" alt=""></div>
+			<div class="image"><img src = "img\camion.png" alt=""></div>
+			<div class="image"><img src = "img\camion.png" alt=""></div>
+			<div class="image"><img src = "img\camion.png" alt=""></div>
+			<div class="image"><img src = "img\camion.png" alt=""></div>
+			<div class="image"><img src = "img\camion.png" alt=""></div>
+			<div class="image"><img src = "img\camion.png" alt=""></div>
+			<div class="image"><img src = "img\camion.png" alt=""></div>
+			<div class="image"><img src = "img\camion.png" alt=""></div>
+			
+		</div>
+		
+		<div class="popup-image">
+			<span>&times;</span>
+			<img src="img\camion.png" alt="">
+	
+		</div>
+	</div>
+	
+	
+
+	<script>
+		document.querySelectorAll('.image-container img').forEach(image =>{
+			image.onclick = () =>{
+				document.querySelector('.popup-image').style.display = 'block';
+				document.querySelector('.popup-image img').src=image.getAttribute('src');
+			}
+		});
+
+		document.querySelector('.popup-image span').onclick = ()=>{
+			document.querySelector('.popup-image').style.display='none';
+		}
+	</script>
+	
+	<footer>
+    
+		<p>&copy; 2023 Excavaciones Mansal y Transportes Mansaki. Todos los derechos reservados.</p>
+	  
+	</footer>
+	<!-- <script src="scriptGaleria.js"></script> --> 
+	
+</body>
+
+</html>
